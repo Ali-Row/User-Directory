@@ -10,8 +10,8 @@ const TableBody = ({ users }) => {
     const month = dateArray[1];
     const dayArray = dateArray[2].split("T");
     const day = dayArray[0];
-    const formattedDate = [month, day, year].join("-");
-    return formattedDate;     
+    const finishedDate = [month, day, year].join("-");
+    return finishedDate;     
   }
 
   return (
@@ -23,8 +23,8 @@ const TableBody = ({ users }) => {
               <td data-th="Image" className="align-middle">
                 <img
                   src={picture.medium}
-                  alt={"profile image for " + name.first + " " + name.last}
-                  className="img-responsive rounded-pill"
+                  alt={`${name.first} ${name.last}'s profile`}
+                  className="img-responsive rounded-pill shadow"
                 />
               </td>
               <td data-th="Name" className="name-cell align-middle">
@@ -34,7 +34,7 @@ const TableBody = ({ users }) => {
                 {phone}
               </td>
               <td data-th="Email" className="align-middle">
-                <a href={"mailto:" + email} target="__blank">
+                <a href={`mailto: ${email}`} target="__blank">
                   {email}
                 </a>
               </td>
@@ -45,7 +45,7 @@ const TableBody = ({ users }) => {
           );
         })
       ) : (
-        <div>Loading Users...</div>
+        <div className="p-1"><h3>Loading Users...</h3></div>
       )}
     </tbody>
   );

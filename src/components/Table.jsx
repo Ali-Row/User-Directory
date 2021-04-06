@@ -1,14 +1,13 @@
 import React from "react";
 
-const Table = (props) => {
+const Table = ({ headings, users }) => {
   return (
-    <table className="table">
+    <table className="table mt-3">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
+          {headings.map(heading => {
+            return <th scope="col">{heading}</th>
+          })}
         </tr>
       </thead>
       <tbody>

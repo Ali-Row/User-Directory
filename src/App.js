@@ -1,8 +1,9 @@
+import Main from './components/Main.jsx';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <Main />
     </div>
   );
 }

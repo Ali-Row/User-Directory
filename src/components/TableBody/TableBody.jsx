@@ -1,4 +1,5 @@
 import React from "react";
+import "./TableBody.css"
 
 const TableBody = ({ users }) => {
 
@@ -45,7 +46,7 @@ const TableBody = ({ users }) => {
           );
         })
       ) : (
-        <div className="p-1"><h3>Loading Users...</h3></div>
+        <img className="loading-animation" src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" alt="loading icon"/>
       )}
     </tbody>
   );

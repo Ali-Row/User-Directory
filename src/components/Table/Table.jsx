@@ -4,7 +4,7 @@ import "./Table.css";
 
 const Table = ({ headings, users, handleSort }) => {
   return (
-    <table className="table mt-3">
+    <table className="table">
       <thead>
         <tr>
           {headings.map((heading) => {
@@ -16,7 +16,7 @@ const Table = ({ headings, users, handleSort }) => {
                   handleSort(heading.toLowerCase());
                 }}
               >
-                {heading} <i class="fas fa-sort"></i>
+                {heading} {heading === "Name" ? <i class="fas fa-sort"></i> : ''}
               </th>
             );
           })}

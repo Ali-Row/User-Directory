@@ -1,3 +1,5 @@
 .heading {
     cursor: pointer;
+    background: rgb(64, 101, 129) !important;
+    color: rgb(255, 255, 255) !important;
 }

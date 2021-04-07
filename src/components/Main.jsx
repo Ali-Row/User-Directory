@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Nav from "./Nav.jsx";
+import Nav from "./Nav/Nav.jsx";
 import Table from "./Table/Table.jsx";
 import API from "../utils/API.js";
 
@@ -10,7 +10,13 @@ export default class Main extends Component {
     order: "descending",
   };
 
-  tableHeadings = ["Image", "Name", "Phone", "Email", "DOB"];
+  tableHeadings = [
+    { headingName: "Image", width: "10%" },
+    { headingName: "Name", width: "10%" },
+    { headingName: "Phone", width: "15%" },
+    { headingName: "Email", width: "20%" },
+    { headingName: "DOB", width: "10%" }
+  ];
 
   handleSort = (heading) => {
     if (this.state.order === "descending") {

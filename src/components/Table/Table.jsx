@@ -7,16 +7,17 @@ const Table = ({ headings, users, handleSort }) => {
     <table className="table">
       <thead>
         <tr>
-          {headings.map((heading) => {
+          {headings.map(({ headingName, width }) => {
             return (
               <th
                 className="heading"
                 scope="col"
+                style={{ width }}
                 onClick={() => {
-                  handleSort(heading.toLowerCase());
+                  handleSort(headingName.toLowerCase());
                 }}
               >
-                {heading} {heading === "Name" ? <i class="fas fa-sort"></i> : ''}
+                {headingName} {headingName === "Name" ? <i class="fas fa-sort"></i> : ''}
               </th>
             );
           })}

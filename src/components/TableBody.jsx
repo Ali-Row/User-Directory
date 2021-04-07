@@ -2,7 +2,7 @@ import React from "react";
 
 const TableBody = ({ users }) => {
 
-  const usersExist = users[0] && users[0].name !== undefined;
+  const usersExist = users[0] && users[0].name;
 
   const displayDate = (date) => {
     const dateArray = date.split("-");

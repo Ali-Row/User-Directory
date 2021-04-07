@@ -46,7 +46,7 @@ const TableBody = ({ users }) => {
           );
         })
       ) : (
-        <img className="loading-animation" src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" alt="loading icon"/>
+        <div><img className="loading-animation mr-1" src="https://cutewallpaper.org/21/loading-gif-transparent-background/Free-Content-Discovery-Influencer-Marketing-Tool-Buzzsumo-.gif" alt="loading icon"/></div>
       )}
     </tbody>
   );

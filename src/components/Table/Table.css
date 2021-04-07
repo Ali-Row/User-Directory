@@ -1,5 +1,12 @@
 .heading {
     cursor: pointer;
     font-family: 'Rubik', sans-serif !important;
-    border-top: solid .12rem rgb(2, 2, 2);
+    border-bottom: none !important;
+}
+.heading:hover {
+    background: rgb(242, 242, 242);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }

@@ -1,5 +1,5 @@
 .heading {
     cursor: pointer;
-    background: rgb(64, 101, 129) !important;
-    color: rgb(255, 255, 255) !important;
+    font-family: 'Rubik', sans-serif !important;
+    border-top: solid .12rem rgb(2, 2, 2);
 }

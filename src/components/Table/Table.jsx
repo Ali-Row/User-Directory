@@ -10,7 +10,7 @@ const Table = ({ headings, users, handleSort }) => {
           {headings.map(({ headingName, width }) => {
             return (
               <th
-                className="heading"
+                className="heading p-3"
                 scope="col"
                 style={{ width }}
                 onClick={() => {

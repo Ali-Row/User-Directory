@@ -46,7 +46,9 @@ const TableBody = ({ users }) => {
           );
         })
       ) : (
-        <div><img className="loading-animation mr-1" src="https://cutewallpaper.org/21/loading-gif-transparent-background/Free-Content-Discovery-Influencer-Marketing-Tool-Buzzsumo-.gif" alt="loading icon"/></div>
+        <div>
+          <img className="loading-animation mr-1" src="https://cutewallpaper.org/21/loading-gif-transparent-background/Free-Content-Discovery-Influencer-Marketing-Tool-Buzzsumo-.gif" alt="loading icon"/>
+        </div>
       )}
     </tbody>
   );
